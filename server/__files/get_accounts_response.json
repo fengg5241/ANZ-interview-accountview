@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"name": "Savings",
+		"type": "Saving",
+		"amount": 100,
+		"isPending":"0",
+		"detail":[{
+			"id": 1,
+			"name": "Online pay",
+			"isPay":"1",
+			"amount": 50,
+			"createTime":"06 NOV 2020"
+			},
+			{
+			"id": 2,
+			"name": "Transfer",
+			"isPay":"1",
+			"amount": 50,
+			"createTime":"06 NOV 2020"
+			},
+			{
+			"id": 3,
+			"name": "Salary",
+			"isPay":"0",
+			"amount": 200,
+			"createTime":"06 NOV 2020"
+			}]
+	},
+	{
+		"id": 2,
+		"name": "Loan",
+		"type": "loan",
+		"amount": 288888,
+		"isPending":"0",
+		"detail":[{
+			"id": 1,
+			"name": "House Loan",
+			"isPay":"1",
+			"amount": 1500,
+			"createTime":"06 NOV 2020"
+			},
+			{
+			"id": 2,
+			"name": "Car Loan",
+			"isPay":"1",
+			"amount": 50,
+			"createTime":"06 NOV 2020"
+			}
+			]
+	}
+]
