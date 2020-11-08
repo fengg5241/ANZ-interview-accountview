@@ -1,7 +1,4 @@
-
-import axios from 'axios'
 import {getRedirectPath} from '../util'
-import Constants from '../constants'
 const LOGIN_SUCESS = 'LOGIN_SUCESS'
 const ERROR_MSG = 'ERROR_MSG'
 const LOAD_DATA = 'LOAD_DATA'

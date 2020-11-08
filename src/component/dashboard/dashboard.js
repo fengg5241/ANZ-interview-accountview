@@ -1,19 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import {NavBar,SearchBar, Button,Flex, Icon,Modal} from 'antd-mobile'
+import {Modal} from 'antd-mobile'
 import {Switch, Route} from 'react-router-dom'
 import NavLinkBar from '../navLink/navLink'
 import User from '../user/user'
 import Account from '../account/account'
-function Customer(){
-    return <h2>Customer list</h2>
-}
-function Msg(){
-    return <h2>msg list</h2>
-}
-
-const prompt = Modal.prompt;
-
 
 @connect(
     state=>state

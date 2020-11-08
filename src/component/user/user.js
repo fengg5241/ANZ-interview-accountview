@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {List,WingBlank,Toast,NavBar,Button} from 'antd-mobile'
 import axios from 'axios'
 import {withRouter} from 'react-router-dom'
@@ -22,8 +21,7 @@ class User extends React.Component{
         }
     }
     componentDidMount() {
-        if(this.props.accounts.length == 0){
-            // this.props.initAccounts(dummyData)
+        if(this.props.accounts.length === 0){
             axios.get(Constants.SERVICE_URL + '/api/accounts').
             then(res=>{
                 if(res.status===200){

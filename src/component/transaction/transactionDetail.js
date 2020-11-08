@@ -1,17 +1,9 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import {List,WhiteSpace,WingBlank,Pagination, Icon,SearchBar,NavBar,Button} from 'antd-mobile'
+import {List,WingBlank, Icon,NavBar} from 'antd-mobile'
 import { createForm } from 'rc-form';
-import axios from 'axios'
-import Constants from '../../constants'
-
-const nowTimeStamp = Date.now();
-const now = new Date(nowTimeStamp);
-const utcOffset = new Date(now.getTime() - (now.getTimezoneOffset() * 60000));
 
 const Item = List.Item;
-let oldPayment = 0;
-let oldDeductedPoint = 0;
 @withRouter
 class TransactionDetail extends React.Component{
     
@@ -39,8 +31,6 @@ class TransactionDetail extends React.Component{
     }
 
     render(){
-        const { getFieldProps, getFieldError } = this.props.form;
-        let userType = localStorage.getItem("type");
         let listHight = 0;
         if (document.getElementsByClassName('am-tab-bar-bar')[0]) {
             listHight = document.documentElement.clientHeight - 45 - 40 - document.getElementsByClassName('am-tab-bar-bar')[0].offsetHeight
@@ -48,7 +38,6 @@ class TransactionDetail extends React.Component{
             listHight = document.documentElement.clientHeight - 45 - 40 - 50
         }
 
-        console.log(this.state.data);
         return (
             <div>
             <NavBar className='fixd-header' mode='dark'

@@ -1,11 +1,6 @@
-
-import axios from 'axios'
-import {getRedirectPath} from '../util'
-import Constants from '../constants'
 const ADD_ACCOUNT_SUCESS = 'ADD_ACCOUNT_SUCESS'
 const INIT_ACCOUNT_SUCESS = 'INIT_ACCOUNT_SUCESS'
 const ERROR_MSG = 'ERROR_MSG'
-const LOAD_DATA = 'LOAD_DATA'
 const initState={
 	accounts:[],
 	msg:""
@@ -30,10 +25,6 @@ function addAccountSuccess(data){
 
 function initAccountsSuccess(data){
 	return { type:INIT_ACCOUNT_SUCESS , payload:data}
-}
-
-function errorMsg(msg){
-	return { msg, type:ERROR_MSG }
 }
 
 export function addAccount(account){

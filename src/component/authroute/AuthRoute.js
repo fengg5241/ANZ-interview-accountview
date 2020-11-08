@@ -1,8 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
-import { connect } from 'react-redux'
 
-@withRouter //可以看到history对象
+@withRouter
 class AuthRoute extends React.Component{
 	componentDidMount() {
 		const publicList = ['/login']

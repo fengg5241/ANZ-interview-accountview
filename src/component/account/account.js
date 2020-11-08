@@ -1,17 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
-import {List,WhiteSpace,WingBlank,NavBar,Icon, InputItem, Button,DatePicker} from 'antd-mobile'
+import {List,WhiteSpace,WingBlank,NavBar, InputItem, Button} from 'antd-mobile'
 import { createForm } from 'rc-form';
-import axios from 'axios'
-import Constants from '../../constants'
-
-const nowTimeStamp = Date.now();
-const now = new Date(nowTimeStamp);
-const utcOffset = new Date(now.getTime() - (now.getTimezoneOffset() * 60000));
 
 const Item = List.Item;
-const Brief = Item.Brief;
 @withRouter
 class Account extends React.Component{
     
@@ -29,7 +21,7 @@ class Account extends React.Component{
     }
     
     render(){
-        const { getFieldProps, getFieldError } = this.props.form;
+        const { getFieldProps } = this.props.form;
         const name = localStorage.getItem('user');
         return (
             <div>
