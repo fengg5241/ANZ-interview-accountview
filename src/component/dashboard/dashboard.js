@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import {Modal} from 'antd-mobile'
 import {Switch, Route} from 'react-router-dom'
 import NavLinkBar from '../navLink/navLink'
 import User from '../user/user'

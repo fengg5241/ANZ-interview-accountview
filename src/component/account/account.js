@@ -3,7 +3,6 @@ import { withRouter } from 'react-router-dom'
 import {List,WhiteSpace,WingBlank,NavBar, InputItem, Button} from 'antd-mobile'
 import { createForm } from 'rc-form';
 
-const Item = List.Item;
 @withRouter
 class Account extends React.Component{
     
